@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card card-modal-1">
+            <div class="card-image"><img src="image/kyle-johnson-TEZZzuQTt8g-unsplash.jpg" alt=""></div>
+            <div class="card-text">
+                <div class="text-h1">Lorem, ipsum dolor.</div>
+                <div class="text-subtitle">Lorem, ipsum dolor.</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, corporis nisi. Reiciendis quam
+                    voluptas eligendi tempore.</p>
+            </div>
+            <div class="card-footer">
+                <a href="">SHARE</a>
+                <a href="">EXPLORE</a>
+                <i onclick="showModal(`card-modal-1`)" style="float:right;" class="fa fa-chevron-down"
+                    aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="card card-modal-2">
+            <div class="card-image"><img src="image/jessie-mccall-a9_8YKoqIYo-unsplash.jpg" alt=""></div>
+            <div class="card-text">
+                <div class="text-h1">Lorem, ipsum</div>
+                <div class="text-subtitle">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="card-footer">
+                <a href="">SHARE</a>
+                <a href="">EXPLORE</a>
+                <i onclick="showModal(`card-modal-2`)" style="float:right;" class="fa fa-chevron-down"
+                    aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image-profile">
+                <img src="image/ben-parker-OhKElOkQ3RE-unsplash.jpg" alt="">
+                <div>
+                    <h5>Lorem.</h5>
+                    Lorem, ipsum dolor.
+                </div>
+            </div>
+            <div class="card-image"><img src="image/subhaan-saleem-Pvh9yjhL9W4-unsplash.jpg" alt=""></div>
+            <div class="card-text">
+                <div class="text-h1">Lorem, ipsum dolor.</div>
+                <div class="text-subtitle">Lorem, ipsum dolor.</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus in labore hic, sunt dolorum
+                    consequatur dolorem eum animi velit veritatis, quasi dolore eius iste modi impedit, tempore officiis
+                    praesentium soluta.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image"><img src="image/tessa-wilson-pVqKgKxcRyw-unsplash.jpg" alt=""></div>
+            <div class="card-footer">
+                <i style="float:right;" class="fa fa-map-marker" aria-hidden="true"></i>
+                <i style="float:right;" class="fa fa-bookmark" aria-hidden="true"></i>
+                <i style="float:right;" class="fa fa-heart" aria-hidden="true"></i>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div onclick="closeModal()" class="card-modal display-none">
+        <div class="modal-content">
+            <div class="text-h1">Lodaing...</div>
+            <img src="" alt="">
+            <p>Lodaing...</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+</body>
+<script src="myScript.js"></script>
+
+</html>
